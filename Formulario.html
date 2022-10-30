@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>formulario</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<section>
+<form>
+    <h1>FORMULARIO DE INSCRIPCION</h1>
+    <BR>
+    <fieldset>
+        <label for="nombreusurio">Nombre del Usuario</label>
+        <input type="text" name="nomusu" size="45" maxlength="40"placeholder="ingrese su nombre y apellido">
+    <br>
+    <br>
+        <label for="emailusuario">Correo del Usuario</label>
+        <input type="email" name="mail" size="45" maxlength="40"placeholder="ingrese su correo">
+    <br>
+    <br>
+        <label for="pass">Ingrese una Clave</label>
+        <input type="password" name="clave" autofocus >
+    </fieldset>
+         <br>
+    <fieldset>
+         <label>Seleccione la Ciudad</label>
+        <select name="ciudad">
+            <option value="0">Seleccione</option>
+            <option value="1">Bogotá</option>
+            <option value="2">Medellín</option>
+            <option value="3">Cali</option>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <label>Seleccione un Genero</label>
+        <input type="radio" name="genero" value="femenino">Femenino
+        <input type="radio" name="genero" value="masculino">Masculino
+        <input type="radio" name="genero" value="otro">Otro
+    </fieldset>
+    <br>
+    <fieldset>
+        <label> Seleccione estudios</label> <br>
+        <input type="checkbox" name="prim" value="primaria">primaria
+        <input type="checkbox" name="seg" value="segundaria">segundaria
+        <input type="checkbox" name="pre" value="pregrado">pregrado
+        <input type="checkbox" name="post" value="postgrado">postgrado
+    <br>
+    <br>
+        <input type="checkbox" value="1" id="product-1-1" name="check" /> Atributo 1<br/>
+        <input type="checkbox" value="2" id="product-1-2" name="check" /> Atributo 2<br/>
+        <input type="checkbox" value="3" id="product-1-3" name="check" /> Atributo 3<br/>
+    <br>
+    </fieldset>        
+        <label>Observaciones</label><br>
+        <textarea cols="50" rows="10"></textarea>
+<br>
+<fieldset>
+<input type="submit" value="Enviar">
+<input type="reset" value="Cancelar">
+<input type="file" value="adjuntar">
+</fieldset>
+<br>
+<fieldset>
+<input type="number" name="numero" max="100" min="18">
+<input  type="range" name="rango" min="0" max="100" step="5"> /*con javaScript se configura*/
+</fieldset>
+<br>
+<fieldset>
+<input type="date">
+<input type="datetime-local">
+<input type="time">
+<input type="month">
+<input type="week">
+</fieldset>
+<br>
+<fieldset>
+<progress max="100" value="80"></progress>
+<meter min="0" max="100" low="35" high="75" optimum="100" value="75"></meter>
+<input type="color">
+</fieldset>
+    </form>
+</section>
+</body>
+</html>
